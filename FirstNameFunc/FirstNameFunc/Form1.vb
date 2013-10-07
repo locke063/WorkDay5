@@ -9,7 +9,17 @@ Public Class Form1
     End Sub
 
     Function FirstName(ByVal name As String) As String
+        Dim idx As Integer
+        Dim fName As String
+        idx = name.IndexOf(" ")
+
+        fName = name.Substring(0, idx)
+        Return fName
+
+
+
         Return "Not Implemented Yet"
+
     End Function
 
 End Class
